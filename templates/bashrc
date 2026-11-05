@@ -1,4 +1,8 @@
-# If not running interactively, don't do anything (leave this at the top of this file)
+# Keep OMARCHY_PATH/PATH in sync with omarchy-dev-link/unlink state, needed even
+# for non-interactive shells (leave this above the interactive guard below)
+[[ -r /usr/share/omarchy/default/bash/env-bootstrap ]] && source /usr/share/omarchy/default/bash/env-bootstrap
+
+# If not running interactively, don't do anything else (leave this above the rc source)
 [[ $- != *i* ]] && return
 
 # Auto-launch fish shell if in interactive bash
@@ -12,6 +16,6 @@ fi
 
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
-source ~/.local/share/omarchy/default/bash/rc
+source "$OMARCHY_PATH/default/bash/rc"
 
 # Add your own exports, aliases, and functions below.
