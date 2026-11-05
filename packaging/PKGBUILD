@@ -2,20 +2,20 @@
 # Based on omarchy-fish by Ryan Hughes <ryan@omarchy.org>
 # (https://github.com/omacom/omarchy-pkgs, pkgbuilds/omarchy-fish)
 
-pkgname=omarchy-fish-joaosa
+pkgname=omafish
 _upstream=omarchy-fish
 pkgver=1.5.0
 pkgrel=1
-pkgdesc="Omarchy shell configuration for Fish (joaoptpsa fork)"
+pkgdesc="Omarchy shell configuration for Fish, with joaoptpsa's fixes"
 arch=('any')
-url="https://github.com/joaoptpsa/omarchy-fish"
+url="https://github.com/joaoptpsa/omafish"
 license=('MIT')
 depends=('fish' 'eza' 'mise' 'zoxide' 'starship' 'fzf' 'fd' 'bat')
 makedepends=('git')
 provides=("${_upstream}")
 conflicts=("${_upstream}")
 options=('!debug')
-install=omarchy-fish-joaosa.install
+install=omafish.install
 source=("${_upstream}::git+${url}.git"
         "fzf.fish-v10.3.tar.gz::https://github.com/PatrickF1/fzf.fish/archive/refs/tags/v10.3.tar.gz")
 sha256sums=('SKIP'

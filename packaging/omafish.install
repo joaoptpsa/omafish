@@ -1,5 +1,5 @@
 post_install() {
-    echo "==> omarchy-fish-joaosa installed successfully!"
+    echo "==> omafish installed successfully!"
     echo ""
     echo "==> To run fish from bash:"
     echo "    fish"
@@ -9,6 +9,6 @@ post_install() {
 }
 
 post_remove() {
-    echo "==> omarchy-fish-joaosa has been removed"
+    echo "==> omafish has been removed"
     echo "==> To restore bash, copy a backup to ~/.bashrc"
 }
