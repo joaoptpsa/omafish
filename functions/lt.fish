@@ -1,3 +1,3 @@
-function lt --wraps='eza $EZA_STANDARD_OPTIONS $EZA_LT_OPTIONS' --description 'alias lt eza $EZA_STANDARD_OPTIONS $EZA_LT_OPTIONS'
-    eza $EZA_STANDARD_OPTIONS $EZA_LT_OPTIONS $argv
+function lt --wraps='eza --tree --level=2 --long --icons --git' --description 'alias lt=eza --tree --level=2 --long --icons --git'
+  eza --tree --level=2 --long --icons --git $argv
 end
